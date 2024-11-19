@@ -1,0 +1,713 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+  <META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+  <META HTTP-EQUIV="EXPIRES" CONTENT="0">
+  <META NAME="RESOURCE-TYPE" CONTENT="DOCUMENT">
+  <META NAME="REVISIT-AFTER" CONTENT="1 DAYS">
+  <META NAME="RATING" CONTENT="GENERAL">
+  <META NAME="GENERATOR" CONTENT="Teach2000 (8.53 - Mar 2011) version 8.53">
+  <META NAME="DISTRIBUTION" CONTENT="GLOBAL">
+  <META NAME="DESCRIPTION" CONTENT="Exported content from the free flashcard software Teach2000.">
+  <META NAME="KEYWORDS" CONTENT="Teach2000, flashcard, overhoor">
+  <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+  <META NAME="TITLE" CONTENT="Capitals of every country">
+
+  <title>Capitals of every country</title>
+
+<style type="text/css">
+
+body {
+  font-family: Verdana, Helvetica, sans-serif;
+  background-color: #FFFFFF;
+  color: #000066;
+}
+
+body, table {
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 170%;
+  margin-top: 0.5em;
+}
+
+h2 {
+  font-size: 135%;
+  margin-top: 0.4em;
+}
+
+h3 {
+  font-size: 120%;
+  margin-top: 0.3em;
+}
+
+select {
+  width: 130px;
+}
+
+input.Edit {
+  width: 90%;
+  font-size: 18px;
+}
+
+div.Titles {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 5px;
+}
+
+td.NavBar{
+  background-color: #000066;
+  text-align: center;
+  color: White;
+}
+
+div.CardStyle {
+  position: absolute;
+  font-family: Verdana, Helvetica, sans-serif;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  color: #000033;
+  background-color: #DEE3E7;
+  left: -50px;
+  top: -50px;
+}
+
+div.Feedback {
+  background-color: #FFFFFF;
+  left: 1px;
+  top: 1px;
+  z-index: 1;
+  border-width: 1px;
+  border-style: none;
+  text-align: center;
+  color: #000066;
+  padding: 5px;
+  position: absolute;
+}
+
+span.Hint{
+  color: Red;
+}
+
+div.Result {
+  padding-left: 20px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-top: 5px;
+  font-size: 14px;
+}
+
+footer {
+  font-size: 10px;
+}
+
+span.box {
+	background-color: #2161A8;
+	border: 1px solid #6495ED;
+	color: #F0F0F0;
+	padding: 0px;
+	position: absolute;
+	cursor: move;
+}
+
+span.box_question {
+	background-color: #2161A8;
+	border: 1px solid #6495ED;
+	color: #F0F0F0;
+	padding: 0px;
+	position: absolute;
+	cursor: default;
+}
+
+span.box:hover {
+	border: 2px solid #6495ED;
+}
+
+span.box_content {
+  padding: 5px;
+}
+
+textarea.Edit {
+	font-size: 18px;
+	font-family: Arial, sans-serif;
+	height: 321px;
+	width: 745px;
+}
+
+div.Question {
+    width: 97%;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    background-color: White;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+</style>
+</head>
+<body>
+
+<script type="text/javascript" language="JavaScript">
+<!--
+
+// De JavaScript van deze pagina mag zonder bronvermelding en link (http://www.teach.nl - Bron: Teach2000) niet worden overgenomen.
+// Copyright Basement.nl, 2011
+
+var FQuestionTypes = new Array("", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "");
+var FQuestions = new Array("Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "The Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo, Republic of the", "Congo, Democratic Republic of the", "Costa Rica", "Cote d\'Ivoire", "Croatia", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "The Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Macedonia", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Federated States of Micronesia", "Moldova", "Monaco", "Mongolia", "Morocco", "Mozambique", "Myanmar (Burma)", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Norway", "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia and Montenegro (Yugoslavia)", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "Spain", "Sri Lanka", "Sudan", "Suriname", "Swaziland", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City (Holy See)", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe");
+var FAnswers = new Array("Kabul", "Tirane", "Algiers", "Andorra la Vella", "Luanda", "Saint John\'s", "Buenos Aires", "Yerevan", "Canberra", "Vienna", "Baku", "Nassau", "Manama", "Dhaka", "Bridgetown", "Minsk", "Brussels", "Belmopan", "Porto-Novo", "Thimphu", "La Paz (administrative) Sucre (judicial)", "Sarajevo", "Gaborone", "Brasilia", "Bandar Seri Begawan", "Sofia", "Ouagadougou", "Bujumbura", "Phnom Penh", "Yaounde", "Ottawa", "Praia", "Bangui", "N\'Djamena", "Santiago", "Beijing", "Bogota", "Moroni", "Brazzaville", "Kinshasa", "San Jose", "Yamoussoukro (official) Abidjan (de facto)", "Zagreb", "Havana", "Nicosia", "Prague", "Copenhagen", "Djibouti", "Roseau", "Santo Domingo", "Dili", "Quito", "Cairo", "San Salvador", "Malabo", "Asmara", "Tallinn", "Addis Ababa", "Suva", "Helsinki", "Paris", "Libreville", "Banjul", "Tbilisi", "Berlin", "Accra", "Athens", "Saint George\'s", "Guatemala City", "Conakry", "Bissau", "Georgetown", "Port-au-Prince", "Tegucigalpa", "Budapest", "Reykjavik", "New Delhi", "Jakarta", "Tehran", "Baghdad", "Dublin", "Jerusalem", "Rome", "Kingston", "Tokyo", "Amman", "Astana", "Nairobi", "Tarawa", "Pyongyang", "Seoul", "Kuwait City", "Bishtek", "Vientiane", "Riga", "Beirut", "Maseru", "Monrovia", "Tripoli", "Vaduz", "Vilnius", "Luxembourg", "Skopje", "Antananarivo", "Lilongwe", "Kuala Lumpur", "Male", "Bamko", "Valletta", "Majuro", "Nouakchott", "Port Louis", "Mexico City", "Palikir", "Chisinau", "Monaco", "Ulaanbaatar", "Rabat", "Maputo", "Rangoon", "Windhoek", "Yaren District", "Kathmandu", "Amsterdam", "Wellington", "Managua", "Niamey", "Abuja", "Oslo", "Muscat", "Islamabad", "Koror", "Panama City", "Port Moresby", "Asuncion", "Lima", "Manila", "Warsaw", "Lisbon", "Doha", "Bucharest", "Moscow", "Kigali", "Basseterre", "Castries", "Kingstown", "Apia", "San Marino", "Sao Tome", "Riyadh", "Dakar", "Belgrade", "Victoria", "Freetown", "Singapore", "Bratislava", "Ljubljana", "Honiara", "Mogadishu", "Pretoria (administrative) Cape Town (legislative) Bloemfontein (judiciary)", "Madrid", "Colombo", "Khartoum", "Paramaribo", "Mbabana", "Stockholm", "Bern", "Damascus", "Taipei", "Dushanbe", "Dar es Salaam", "Bangkok", "Lome", "Nuku\'alofa", "Port-of-Spain", "Tunis", "Ankara", "Ashgabat", "Funafuti", "Kampala", "Kiev", "Abu Dhabi", "London", "Washington D.C.", "Montevideo", "Tashkent", "Port-Vila", "Vatican City", "Caracas", "Hanoi", "Sanaa", "Lusaka", "Harare");
+var FRemarks = new Array("", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "");
+
+var FItemNo;
+var FAnswer;
+var FTotalQuestions;
+var FQuestionsOK;
+var FAskedQuestions;
+var FQuestionIsMC;
+var FSymbolMap = 0;
+
+function TextToHTML(AText)
+{
+ return AText.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+function BBCodeToHTML(ABBCode)
+{
+  return TextToHTML(ABBCode).replace(new RegExp("\\[\/{0,1}(b|i|u|s|sup|sub|br)\\]", "gi"),
+    function(AMatch)
+    {
+      return AMatch.replace(/\[/, "<").replace(/\]/, ">");
+    }
+  ).replace(/\[red\]/g, "<font color=\"Red\">").replace(/\[\/red\]/g, "</font>");
+}
+
+function BBCodeToPlain(ABBCode)
+{
+  return ABBCode.replace(/\[\/{0,1}(b|i|u|s|sup|sub|red)\]/g, "").replace(/\[br\]/g, " ");
+}
+
+function Init()
+{
+  FItemNo = 0;
+  FTotalQuestions = 0;
+  FQuestionsOK = 0;
+  FAskedQuestions = 0;
+  FQuestionIsMC = false;
+  document.getElementById("idResult").innerHTML = " A new test has been started. Good luck!";
+  document.getElementById("idResult").style.backgroundColor = "White";
+  document.getElementById("idResult").style.color = "#000066";
+  DisplayNewQuestion();
+}
+
+function ShuffleList()
+{
+  var NewNumber;
+  var StringStore;
+  for (var I = 0; I < FQuestions.length; I++)
+  {
+    NewNumber = (Math.random() * FQuestions.length - 1) + 1;
+    NewNumber = parseInt(NewNumber, 10);
+    StringStore = FQuestionTypes[I];
+    FQuestionTypes[I] = FQuestionTypes[NewNumber];
+    FQuestionTypes[NewNumber] = StringStore;
+    StringStore = FQuestions[I];
+    FQuestions[I] = FQuestions[NewNumber];
+    FQuestions[NewNumber] = StringStore;
+    StringStore = FAnswers[I];
+    FAnswers[I] = FAnswers[NewNumber];
+    FAnswers[NewNumber] = StringStore;
+    StringStore = FRemarks[I];
+    FRemarks[I] = FRemarks[NewNumber];
+    FRemarks[NewNumber] = StringStore;
+  }
+  Init();
+}
+
+function ShuffleArray(a, b)
+{
+  return (Math.random() < 0.5) ? -1 : 1;
+}
+
+function GetQuestion(AQuestion)
+{
+  var LOptions = new Array();
+  LOptions = AQuestion.split("|");
+  if (LOptions.length == 1)
+    return AQuestion
+  else
+    return LOptions[Math.round(Math.random() * (LOptions.length - 1))];
+}
+
+function ClearMCAnswers()
+{
+  toggleVisibility("mcA", "hidden", "hidden", "hidden");
+  toggleVisibility("mcB", "hidden", "hidden", "hidden");
+  toggleVisibility("mcC", "hidden", "hidden", "hidden");
+  toggleVisibility("mcD", "hidden", "hidden", "hidden");
+  toggleVisibility("mcE", "hidden", "hidden", "hidden");
+  toggleVisibility("mcF", "hidden", "hidden", "hidden");
+}
+
+function DisplayMCAnswers(AMCOptions)
+{
+  AMCOptions.sort(ShuffleArray);
+  for (var I = 0; I < AMCOptions.length; I++)
+  {
+    switch(I)
+    {
+      case 0:
+        toggleVisibility("mcA", "show", "visible", "visible");
+        document.getElementById("idMCAnswerA").innerHTML = GetQuestion(AMCOptions[I]);
+        break;
+      case 1:
+        toggleVisibility("mcB", "show", "visible", "visible");
+        document.getElementById("idMCAnswerB").innerHTML = GetQuestion(AMCOptions[I]);
+        break;
+      case 2:
+        toggleVisibility("mcC", "show", "visible", "visible");
+        document.getElementById("idMCAnswerC").innerHTML = GetQuestion(AMCOptions[I]);
+        break;
+      case 3:
+        toggleVisibility("mcD", "show", "visible", "visible");
+        document.getElementById("idMCAnswerD").innerHTML = GetQuestion(AMCOptions[I]);
+        break;
+      case 4:
+        toggleVisibility("mcE", "show", "visible", "visible");
+        document.getElementById("idMCAnswerE").innerHTML = GetQuestion(AMCOptions[I]);
+        break;
+      case 5:
+        toggleVisibility("mcF", "show", "visible", "visible");
+        document.getElementById("idMCAnswerF").innerHTML = GetQuestion(AMCOptions[I]);
+        break;
+     }
+  }
+}
+
+function MyIndexOf(AMCAnswers, AMCAnswer)
+{
+  var LResult = -1;
+  for (var I = 0; I < AMCAnswers.length; I++)
+    if (AMCAnswers[I] == AMCAnswer)
+      LResult = I;
+  return LResult;
+}
+
+function DisplayNewQuestion()
+{
+  var LQuestion;
+  var LAskUnknownKnown = (document.frmMain.cbKind.selectedIndex == 0);
+  var LMultipleChoice = (document.frmMain.cbType.selectedIndex == 1);
+  var LFlashcard = (document.frmMain.cbType.selectedIndex == 0);
+  var LMCAnswers = new Array();
+  var LMCAnswerCount;
+  var LMCAnswer;
+
+  ClearMCAnswers();
+  document.frmMain.btnCheck.value = " Check";
+  document.frmMain.btnShowHint.value = " Hint";
+  document.frmMain.edAnswer.readOnly = "";
+  document.frmMain.edAnswer.value = "";
+  document.frmMain.edAnswer.focus();
+  FQuestionIsMC = FQuestionTypes[FItemNo] == "MC";
+  if (FQuestionIsMC)
+  {
+    LQuestion = GetQuestion(FQuestions[FItemNo]);
+    LMCAnswers = FAnswers[FItemNo].split("|");
+    FAnswer = LMCAnswers[0];
+    DisplayMCAnswers(LMCAnswers);
+  }
+  else
+  {
+    if (document.frmMain.cbKind.selectedIndex == 2)
+      LAskUnknownKnown = (Math.random(1) > 0.5);
+    if (LAskUnknownKnown)
+    {
+      FAnswer = FAnswers[FItemNo];
+      LQuestion = GetQuestion(FQuestions[FItemNo]);
+    }
+    else
+    {
+      FAnswer = FQuestions[FItemNo];
+      LQuestion = GetQuestion(FAnswers[FItemNo]);
+    }
+    FAnswer = BBCodeToPlain(FAnswer);
+
+    if (LMultipleChoice)
+    {
+      LMCAnswers.push(FAnswer);
+
+      if (FQuestions.length > 4)
+        LMCAnswerCount = 4
+      else
+        LMCAnswerCount = FQuestions.length;
+
+      I = 1;
+      while (I < LMCAnswerCount)
+      {
+        if (LAskUnknownKnown)
+          LMCAnswer = GetQuestion(FAnswers[Math.round(Math.random() * (FAnswers.length - 1))])
+        else
+          LMCAnswer = GetQuestion(FQuestions[Math.round(Math.random() * (FQuestions.length - 1))]);
+
+        if (MyIndexOf(LMCAnswers, LMCAnswer) < 0)
+        {
+          LMCAnswers.push(LMCAnswer);
+          I++
+        }
+      }
+      DisplayMCAnswers(LMCAnswers);
+    }
+    else
+    {
+      if (LFlashcard)
+      {
+        document.frmMain.edAnswer.value = " Think about the answer and choose 'Show answer'.";
+        document.frmMain.edAnswer.readOnly = "readonly";
+        document.frmMain.btnCheck.value = " Show answer";
+      }
+    }
+  }
+  document.getElementById("idHint").innerHTML = BBCodeToHTML(FRemarks[FItemNo]);
+  document.getElementById("idQuestionNumber").innerHTML = parseInt(FItemNo + 1) + "  of " + FQuestions.length;
+  document.getElementById("idQuestion").innerHTML = BBCodeToHTML(LQuestion);
+}
+
+function Next()
+{
+  if (FItemNo > FQuestions.length - 2)
+    FItemNo = 0
+  else
+    FItemNo++;
+}
+
+function GetScore()
+{
+  var LScore;
+  
+  LScore = (FQuestionsOK * 10) / FAskedQuestions;
+  LScore = Math.round(LScore * 10) / 10;
+  if (LScore < 1) LScore = 1;
+  return LScore;
+}
+
+function CheckAnswer()
+{
+  FTotalQuestions++;
+  var LGivenAnswer = document.frmMain.edAnswer.value;
+  var I;
+  var LAnswerIsOK;
+  var LOptions = new Array();
+  var LAnswer = FAnswer;
+
+  if (document.frmMain.btnCheck.value == " Show answer")
+  {
+    document.frmMain.edAnswer.value = " The answer is: " + FAnswer.replace(/\|/g, "; ");
+    document.frmMain.btnCheck.value = " Just what I thought";
+    document.frmMain.btnShowHint.value = " I had a different answer";
+  }
+  else
+  {
+    if (document.frmMain.btnCheck.value == " Just what I thought")
+    {
+      ShowFlashcardResult(true);
+    }
+    else
+    {
+      FAskedQuestions++;
+
+      if (document.frmMain.cbCheckType.selectedIndex == 1)
+      {
+        LAnswer = FAnswer.replace(/ı/g, "I");
+        LAnswer = LAnswer.replace(/İ/g, "I");
+        LAnswer = LAnswer.toUpperCase();
+        LGivenAnswer = LGivenAnswer.replace(/ı/g, "I");
+        LGivenAnswer = LGivenAnswer.replace(/İ/g, "I");
+        LGivenAnswer = LGivenAnswer.toUpperCase();
+      }
+      LOptions = LAnswer.split("|");
+      LAnswerIsOK = false;
+
+      for (I in LOptions)
+      {
+        if (LOptions[I] == LGivenAnswer)
+          LAnswerIsOK = true;
+      }
+      ShowResult(LAnswerIsOK);
+      Next();
+      DisplayNewQuestion();
+    }
+  }
+}
+
+function ShowFlashcardResult(AResult)
+{
+  FAskedQuestions++;
+  document.frmMain.edAnswer.value = "";
+  ShowResult(AResult);
+  Next();
+  DisplayNewQuestion();
+}
+
+function ShowResult(AResult)
+{
+  if (AResult)
+  {
+    FQuestionsOK++;
+    document.getElementById("idResult").innerHTML = " Score: " + GetScore() + "<br> This answer is correct!!";
+    document.getElementById("idResult").style.backgroundColor = "Lime";
+    document.getElementById("idResult").style.color = "Black";
+  }
+  else
+  {
+    FAnswer = FAnswer.replace(/\|/g, "; ");
+    document.getElementById("idResult").innerHTML = " Score: " + GetScore() + "<br> The question was: " + document.getElementById("idQuestion").innerHTML + "<br> Your answer: " + document.frmMain.edAnswer.value + "<br> The correct answer: " + FAnswer;
+    document.getElementById("idResult").style.backgroundColor = "Red";
+    document.getElementById("idResult").style.color = "White";
+  }
+}
+
+function CheckMCAnswer(AAnswerNumber)
+{
+  switch(AAnswerNumber)
+  {
+    case 1:
+      document.frmMain.edAnswer.value = document.getElementById("idMCAnswerA").innerHTML;
+      break;
+    case 2:
+      document.frmMain.edAnswer.value = document.getElementById("idMCAnswerB").innerHTML;
+      break;
+    case 3:
+      document.frmMain.edAnswer.value = document.getElementById("idMCAnswerC").innerHTML;
+      break;
+    case 4:
+      document.frmMain.edAnswer.value = document.getElementById("idMCAnswerD").innerHTML;
+      break;
+    case 5:
+      document.frmMain.edAnswer.value = document.getElementById("idMCAnswerE").innerHTML;
+      break;
+    case 6:
+      document.frmMain.edAnswer.value = document.getElementById("idMCAnswerF").innerHTML;
+      break;
+  }
+  CheckAnswer();
+}
+
+function ShowHint()
+{
+  if (document.frmMain.btnShowHint.value == " I had a different answer")
+  {
+    ShowFlashcardResult(false);
+  }
+  else
+  {
+    var LHint = "";
+    var LAnswer = GetQuestion(FAnswer);
+    for (var I = 0; I < LAnswer.length; I++)
+    {
+      LHint += ".";
+    }
+    document.frmMain.edAnswer.value = (LAnswer.length > 2) ?
+      LAnswer.charAt(0) + LHint.substring(1, LHint.length - 1) + LAnswer.charAt(LAnswer.length - 1) : LHint;
+    document.frmMain.edAnswer.focus();
+  }
+}
+
+function toggleVisibility(id, NNtype, IEtype, WC3type)
+{
+  if (document.getElementById)
+  {
+    eval("document.getElementById(id).style.visibility = \"" + WC3type + "\"");
+  }
+  else
+  {
+    if (document.layers)
+    {
+      document.layers[id].visibility = NNtype;
+    }
+    else
+    {
+      if (document.all)
+      {
+        eval("document.all." + id + ".style.visibility = \"" + IEtype + "\"");
+      }
+    }
+  }
+}
+
+function ToggleSymbolVisibility()
+{
+  if (document.getElementById("idSymbols").innerHTML == "")
+    ChangeSymbols()
+  else
+  {
+    document.getElementById("idSymbols").innerHTML = "";
+    FSymbolMap = 0;
+  }
+  document.frmMain.edAnswer.focus();
+}
+
+function ChangeSymbols()
+{
+  switch(FSymbolMap)
+  {
+    case 0:
+      document.getElementById("idSymbols").innerHTML =
+        "<a href=\"javascript:AddSymbol('à')\">à<\/a> " +
+        "<a href=\"javascript:AddSymbol('Â')\">Â<\/a><a href=\"javascript:AddSymbol('â')\">â<\/a> " +
+        "<a href=\"javascript:AddSymbol('ä')\">ä<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ç')\">Ç<\/a><a href=\"javascript:AddSymbol('ç')\">ç<\/a> " +
+        "<a href=\"javascript:AddSymbol('è')\">è<\/a> " +
+        "<a href=\"javascript:AddSymbol('é')\">é<\/a> " +
+        "<a href=\"javascript:AddSymbol('ê')\">ê<\/a> " +
+        "<a href=\"javascript:AddSymbol('ë')\">ë<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ğ')\">Ğ<\/a><a href=\"javascript:AddSymbol('ğ')\">ğ<\/a> " +
+        "<a href=\"javascript:AddSymbol('ı')\">ı<\/a> " +
+        "<a href=\"javascript:AddSymbol('İ')\">İ<\/a> " +
+        "<a href=\"javascript:AddSymbol('Î')\">Î<\/a><a href=\"javascript:AddSymbol('î')\">î<\/a> " +
+        "<a href=\"javascript:AddSymbol('ï')\">ï<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ö')\">Ö<\/a><a href=\"javascript:AddSymbol('ö')\">ö<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ş')\">Ş<\/a><a href=\"javascript:AddSymbol('ş')\">ş<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ü')\">Ü<\/a><a href=\"javascript:AddSymbol('ü')\">ü<\/a> ";
+      break;
+    case 1:
+      document.getElementById("idSymbols").innerHTML =
+        "<a href=\"javascript:AddSymbol('À')\">À<\/a><a href=\"javascript:AddSymbol('à')\">à<\/a> " +
+        "<a href=\"javascript:AddSymbol('Á')\">Á<\/a><a href=\"javascript:AddSymbol('á')\">á<\/a> " +
+        "<a href=\"javascript:AddSymbol('Â')\">Â<\/a><a href=\"javascript:AddSymbol('â')\">â<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ä')\">Ä<\/a><a href=\"javascript:AddSymbol('ä')\">ä<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ã')\">Ã<\/a><a href=\"javascript:AddSymbol('ã')\">ã<\/a> " +
+        "<a href=\"javascript:AddSymbol('Å')\">Å<\/a><a href=\"javascript:AddSymbol('å')\">å<\/a> " +
+        "<a href=\"javascript:AddSymbol('Æ')\">Æ<\/a><a href=\"javascript:AddSymbol('æ')\">æ<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ç')\">Ç<\/a><a href=\"javascript:AddSymbol('ç')\">ç<\/a> " +
+        "<a href=\"javascript:AddSymbol('È')\">È<\/a><a href=\"javascript:AddSymbol('è')\">è<\/a> " +
+        "<a href=\"javascript:AddSymbol('É')\">É<\/a><a href=\"javascript:AddSymbol('é')\">é<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ê')\">Ê<\/a><a href=\"javascript:AddSymbol('ê')\">ê<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ë')\">Ë<\/a><a href=\"javascript:AddSymbol('ë')\">ë<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ğ')\">Ğ<\/a><a href=\"javascript:AddSymbol('ğ')\">ğ<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ì')\">Ì<\/a><a href=\"javascript:AddSymbol('ì')\">ì<\/a> " +
+        "<a href=\"javascript:AddSymbol('Í')\">Í<\/a><a href=\"javascript:AddSymbol('í')\">í<\/a> " +
+        "<a href=\"javascript:AddSymbol('Î')\">Î<\/a><a href=\"javascript:AddSymbol('î')\">î<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ï')\">Ï<\/a><a href=\"javascript:AddSymbol('ï')\">ï<\/a> " +
+        "<a href=\"javascript:AddSymbol('ı')\">ı<\/a> " +
+        "<a href=\"javascript:AddSymbol('İ')\">İ<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ñ')\">Ñ<\/a><a href=\"javascript:AddSymbol('ñ')\">ñ<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ò')\">Ò<\/a><a href=\"javascript:AddSymbol('ò')\">ò<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ó')\">Ó<\/a><a href=\"javascript:AddSymbol('ó')\">ó<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ô')\">Ô<\/a><a href=\"javascript:AddSymbol('ô')\">ô<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ö')\">Ö<\/a><a href=\"javascript:AddSymbol('ö')\">ö<\/a> " +
+        "<a href=\"javascript:AddSymbol('Õ')\">Õ<\/a><a href=\"javascript:AddSymbol('õ')\">õ<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ø')\">Ø<\/a><a href=\"javascript:AddSymbol('ø')\">ø<\/a> " +
+        "<a href=\"javascript:AddSymbol('Œ')\">Œ<\/a><a href=\"javascript:AddSymbol('œ')\">œ<\/a> " +
+        "<a href=\"javascript:AddSymbol('ß')\">ß<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ş')\">Ş<\/a><a href=\"javascript:AddSymbol('ş')\">ş<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ù')\">Ù<\/a><a href=\"javascript:AddSymbol('ù')\">ù<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ú')\">Ú<\/a><a href=\"javascript:AddSymbol('ú')\">ú<\/a> " +
+        "<a href=\"javascript:AddSymbol('Û')\">Û<\/a><a href=\"javascript:AddSymbol('û')\">û<\/a> " +
+        "<a href=\"javascript:AddSymbol('Ü')\">Ü<\/a><a href=\"javascript:AddSymbol('ü')\">ü<\/a> ";
+      break;
+  }
+  document.getElementById("idSymbols").innerHTML = document.getElementById("idSymbols").innerHTML + " <a href=\"javascript:ChangeSymbols()\">More..<\/a>";
+  FSymbolMap++;
+  if (FSymbolMap > 1)
+    FSymbolMap = 0;
+  document.frmMain.edAnswer.focus();
+}
+
+function AddSymbol(ASymbol)
+{
+  document.frmMain.edAnswer.value = document.frmMain.edAnswer.value + ASymbol;
+  document.frmMain.edAnswer.focus();
+}
+
+// -->
+</script>
+
+<h3>Capitals of every country</h3>
+ Write the answer to the given question down and press 'Check' for the result.<br><br>
+
+
+
+
+<br>
+<br>
+<form name="frmMain" action="javascript:CheckAnswer();">
+<table>
+<tr>
+
+<td>
+ Ask:
+<br>
+<select name="cbKind" onChange="Init()">
+<option> Question/answer</option>
+<option> Answer/question</option>
+<option> Both ways</option>
+</select>
+</td>
+
+<td>
+ Type:
+<br>
+<select name="cbType" onChange="Init()">
+<option> Flashcards</option>
+<option> Multiple choice</option>
+<option selected="1"> Normal</option>
+</select>
+</td>
+
+<td>
+ Match:
+<br>
+<select name="cbCheckType" onChange="Init()">
+<option> Exact</option>
+<option> Ignore case</option>
+</select>
+</td>
+
+</tr>
+<tr>
+<td>
+<input type="button" name="btnShuffle" value=" Shuffle" onclick="ShuffleList()"><br><br>
+</td>
+</tr>
+</table>
+
+<br><br>
+<hr>
+<label for="idEdAnswer"> Question <span id="idQuestionNumber"></span>:<br>
+<div class="Question" id="idQuestion">?</div>
+<br>
+ Answer:<br>
+<input name="edAnswer" class="Edit" id="idEdAnswer" autocomplete="off" type="text" value="">
+</label>
+
+<br><br>
+<div id="mcA">A. <a href="javascript:CheckMCAnswer(1)"><span id="idMCAnswerA">A</span></a></div><br>
+<div id="mcB">B. <a href="javascript:CheckMCAnswer(2)"><span id="idMCAnswerB">B</span></a></div><br>
+<div id="mcC">C. <a href="javascript:CheckMCAnswer(3)"><span id="idMCAnswerC">C</span></a></div><br>
+<div id="mcD">D. <a href="javascript:CheckMCAnswer(4)"><span id="idMCAnswerD">D</span></a></div><br>
+<div id="mcE">E. <a href="javascript:CheckMCAnswer(5)"><span id="idMCAnswerE">E</span></a></div><br>
+<div id="mcF">F. <a href="javascript:CheckMCAnswer(6)"><span id="idMCAnswerF">F</span></a></div><br>
+<hr>
+<input type="submit" name="btnCheck" value=" Check">
+<input type="button" name="btnShowHint" value=" Hint" onclick="ShowHint()">
+<span class="Hint" id="idHint"></span>
+<br><br><br>
+<div class="Result" id="idResult"></div>
+</form>
+
+<script type="text/javascript" language="JavaScript">
+<!--
+  Init();
+// -->
+</script>
+
+<p class="footer"> This page is created with the flashcard software <a href="http://www.teach2000.org/?hl=english" title="Teach2000">Teach2000</a>.</p>
+</body>
+</html>
